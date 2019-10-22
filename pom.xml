@@ -12,7 +12,6 @@
     <artifactId>db-adapter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>db-adapter</name>
-    <packaging>jar</packaging>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -23,18 +22,15 @@
         <fastjson.version>1.2.37</fastjson.version>
         <commons-lang3.version>3.5</commons-lang3.version>
         <swagger.version>2.7.0</swagger.version>
+        <pagehelper.version>5.1.2</pagehelper.version>
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -78,6 +74,13 @@
             <version>${mysql.version}</version>
         </dependency>
 
+        <!--pageHelper-->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>${pagehelper.version}</version>
+        </dependency>
+
         <!--swagger文档生成工具 -->
         <dependency>
             <groupId>io.springfox</groupId>
@@ -89,6 +92,7 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>${swagger.version}</version>
         </dependency>
+
 
     </dependencies>
 
